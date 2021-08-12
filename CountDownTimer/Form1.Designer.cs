@@ -37,88 +37,109 @@ namespace CountDownTimer
             this.btnBell = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTime
             // 
+            this.lblTime.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 100F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(207, 191);
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 175F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(75, 172);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(589, 153);
+            this.lblTime.Size = new System.Drawing.Size(697, 265);
             this.lblTime.TabIndex = 0;
-            this.lblTime.Text = "00:00:00";
+            this.lblTime.Text = "00:00";
             this.lblTime.Click += new System.EventHandler(this.lblTime_Click);
             // 
             // btnStart
             // 
+            this.btnStart.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.Location = new System.Drawing.Point(24, 368);
+            this.btnStart.Location = new System.Drawing.Point(17, 478);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(132, 45);
+            this.btnStart.Size = new System.Drawing.Size(126, 45);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnPause
             // 
+            this.btnPause.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPause.Location = new System.Drawing.Point(182, 368);
+            this.btnPause.Location = new System.Drawing.Point(161, 478);
             this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(132, 45);
+            this.btnPause.Size = new System.Drawing.Size(127, 45);
             this.btnPause.TabIndex = 2;
-            this.btnPause.Text = "Pause";
+            this.btnPause.Text = "Reset";
             this.btnPause.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 0);
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(27, -23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(774, 214);
+            this.pictureBox1.Size = new System.Drawing.Size(774, 222);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnBell
             // 
+            this.btnBell.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBell.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBell.Location = new System.Drawing.Point(338, 368);
+            this.btnBell.Location = new System.Drawing.Point(311, 478);
             this.btnBell.Name = "btnBell";
-            this.btnBell.Size = new System.Drawing.Size(132, 45);
+            this.btnBell.Size = new System.Drawing.Size(124, 45);
             this.btnBell.TabIndex = 4;
             this.btnBell.Text = "Sound";
             this.btnBell.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(500, 368);
+            this.button1.Location = new System.Drawing.Point(458, 478);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 45);
+            this.button1.Size = new System.Drawing.Size(143, 45);
             this.button1.TabIndex = 5;
             this.button1.Text = "4 Minutes";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(663, 368);
+            this.button2.Location = new System.Drawing.Point(620, 478);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 45);
             this.button2.TabIndex = 6;
             this.button2.Text = "5 Minutes";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // btnPlus
+            // 
+            this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlus.Location = new System.Drawing.Point(775, 478);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(47, 45);
+            this.btnPlus.TabIndex = 7;
+            this.btnPlus.Text = "+";
+            this.btnPlus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPlus.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(829, 460);
+            this.ClientSize = new System.Drawing.Size(829, 542);
+            this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnBell);
@@ -143,6 +164,7 @@ namespace CountDownTimer
         private System.Windows.Forms.Button btnBell;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPlus;
     }
 }
 
